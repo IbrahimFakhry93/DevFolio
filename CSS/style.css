@@ -161,6 +161,114 @@ li.deep-drop-down:hover .deep-drop-down-list{
 /* <!-- Contributor:YasserMaher98  S T A R T   H O M E   S E C T I O N --> */
 
 
+.home{
+    color:var(--mainHomeColor);
+    background-image: url(../images/hero-bg.jpg);
+    background-size:cover;
+    background-position: center center;
+}
+
+.home .layer{
+    height: 100%;
+    width:100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    
+}
+.home header{
+    position: absolute;
+    z-index: 1;
+}
+.home header h1{
+    font-size:4.5em;
+    position: relative;
+    padding-bottom: 5px;
+    /* background-color: #0078ff; */
+}
+
+
+.home header h1::after{
+    content:"|";
+    position: absolute;
+    bottom:-100%;
+    left:50%;
+    transform: translateX(-50%);
+    /* background-color: red; */
+    animation-name:typing;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+    
+}
+@keyframes typing {
+    0%{
+        content:"|";
+    }
+    5%{
+        content:"F|";
+    }
+    10%{
+        content:"Fr|";
+    }
+    15%{
+        content:"Fre|";
+    }
+    20%{
+        content:"Free|";
+    }
+    25%{
+        content:"Freel|";
+    }
+    30%{
+        content:"Freela|";
+    }
+    35%{
+        content:"Freelan|";
+    }
+    40%{
+        content:"Freelanc|";
+    }
+    45%{
+        content:"Freelance|";
+    }
+    50%{
+        content:"Freelancer|";
+    }
+    55%{
+        content:"Freelancer|";
+    }
+    60%{
+        content:"Freelanc|";
+    }
+    60%{
+        content:"Freelan|";
+    }
+    70%{
+        content:"Freela|";
+    }
+    75%{
+        content:"Freel|";
+    }
+    80%{
+        content:"Free|";
+    }
+    85%{
+        content:"Fre|";
+    }
+    90%{
+        content:"Fr|";
+    }
+    95%{
+        content:"F|";
+    }
+    100%{
+        content:"|";
+    }
+    
+}
+@media  screen and (max-width:600px) {
+    .home{
+        font-size:10px;
+    }
+}
 
 
 
